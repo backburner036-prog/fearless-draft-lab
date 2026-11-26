@@ -1,0 +1,26 @@
+/* Fearless Draft Lab — global styles (Week 1).
+ * Dark navy base from the design wireframe (docs/design/wireframe.md §2).
+ * Component styles live in src/App.css. */
+
+:root {
+  color-scheme: dark;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: #060b14;
+  color: #eaf2fb;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+code {
+  font-family: ui-monospace, Consolas, monospace;
+}

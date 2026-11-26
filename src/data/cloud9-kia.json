@@ -1,0 +1,2742 @@
+{
+  "team_id": "47351",
+  "team": "Cloud9 Kia",
+  "games": 142,
+  "wins": 90,
+  "win_rate": 0.6338,
+  "champion_pool": [
+    {
+      "champion": "Corki",
+      "picks": 24,
+      "wins": 18,
+      "pick_rate": 0.169,
+      "win_rate": 0.75,
+      "low_sample": false
+    },
+    {
+      "champion": "Ezreal",
+      "picks": 22,
+      "wins": 14,
+      "pick_rate": 0.1549,
+      "win_rate": 0.6364,
+      "low_sample": false
+    },
+    {
+      "champion": "Renekton",
+      "picks": 21,
+      "wins": 14,
+      "pick_rate": 0.1479,
+      "win_rate": 0.6667,
+      "low_sample": false
+    },
+    {
+      "champion": "Gnar",
+      "picks": 20,
+      "wins": 16,
+      "pick_rate": 0.1408,
+      "win_rate": 0.8,
+      "low_sample": false
+    },
+    {
+      "champion": "Ambessa",
+      "picks": 20,
+      "wins": 14,
+      "pick_rate": 0.1408,
+      "win_rate": 0.7,
+      "low_sample": false
+    },
+    {
+      "champion": "Vi",
+      "picks": 18,
+      "wins": 12,
+      "pick_rate": 0.1268,
+      "win_rate": 0.6667,
+      "low_sample": false
+    },
+    {
+      "champion": "Alistar",
+      "picks": 17,
+      "wins": 13,
+      "pick_rate": 0.1197,
+      "win_rate": 0.7647,
+      "low_sample": false
+    },
+    {
+      "champion": "Taliyah",
+      "picks": 16,
+      "wins": 12,
+      "pick_rate": 0.1127,
+      "win_rate": 0.75,
+      "low_sample": false
+    },
+    {
+      "champion": "Orianna",
+      "picks": 15,
+      "wins": 12,
+      "pick_rate": 0.1056,
+      "win_rate": 0.8,
+      "low_sample": false
+    },
+    {
+      "champion": "Aurora",
+      "picks": 15,
+      "wins": 10,
+      "pick_rate": 0.1056,
+      "win_rate": 0.6667,
+      "low_sample": false
+    },
+    {
+      "champion": "Wukong",
+      "picks": 15,
+      "wins": 10,
+      "pick_rate": 0.1056,
+      "win_rate": 0.6667,
+      "low_sample": false
+    },
+    {
+      "champion": "Rumble",
+      "picks": 15,
+      "wins": 9,
+      "pick_rate": 0.1056,
+      "win_rate": 0.6,
+      "low_sample": false
+    },
+    {
+      "champion": "Sejuani",
+      "picks": 15,
+      "wins": 9,
+      "pick_rate": 0.1056,
+      "win_rate": 0.6,
+      "low_sample": false
+    },
+    {
+      "champion": "Nautilus",
+      "picks": 15,
+      "wins": 8,
+      "pick_rate": 0.1056,
+      "win_rate": 0.5333,
+      "low_sample": false
+    },
+    {
+      "champion": "Varus",
+      "picks": 14,
+      "wins": 11,
+      "pick_rate": 0.0986,
+      "win_rate": 0.7857,
+      "low_sample": false
+    },
+    {
+      "champion": "K'Sante",
+      "picks": 14,
+      "wins": 8,
+      "pick_rate": 0.0986,
+      "win_rate": 0.5714,
+      "low_sample": false
+    },
+    {
+      "champion": "Rakan",
+      "picks": 13,
+      "wins": 10,
+      "pick_rate": 0.0915,
+      "win_rate": 0.7692,
+      "low_sample": false
+    },
+    {
+      "champion": "Azir",
+      "picks": 13,
+      "wins": 9,
+      "pick_rate": 0.0915,
+      "win_rate": 0.6923,
+      "low_sample": false
+    },
+    {
+      "champion": "Bard",
+      "picks": 13,
+      "wins": 8,
+      "pick_rate": 0.0915,
+      "win_rate": 0.6154,
+      "low_sample": false
+    },
+    {
+      "champion": "Skarner",
+      "picks": 13,
+      "wins": 7,
+      "pick_rate": 0.0915,
+      "win_rate": 0.5385,
+      "low_sample": false
+    },
+    {
+      "champion": "Poppy",
+      "picks": 12,
+      "wins": 9,
+      "pick_rate": 0.0845,
+      "win_rate": 0.75,
+      "low_sample": false
+    },
+    {
+      "champion": "Jarvan IV",
+      "picks": 12,
+      "wins": 7,
+      "pick_rate": 0.0845,
+      "win_rate": 0.5833,
+      "low_sample": false
+    },
+    {
+      "champion": "Ziggs",
+      "picks": 12,
+      "wins": 7,
+      "pick_rate": 0.0845,
+      "win_rate": 0.5833,
+      "low_sample": false
+    },
+    {
+      "champion": "Yunara",
+      "picks": 12,
+      "wins": 5,
+      "pick_rate": 0.0845,
+      "win_rate": 0.4167,
+      "low_sample": false
+    },
+    {
+      "champion": "Neeko",
+      "picks": 11,
+      "wins": 9,
+      "pick_rate": 0.0775,
+      "win_rate": 0.8182,
+      "low_sample": false
+    },
+    {
+      "champion": "Jhin",
+      "picks": 10,
+      "wins": 6,
+      "pick_rate": 0.0704,
+      "win_rate": 0.6,
+      "low_sample": false
+    },
+    {
+      "champion": "Senna",
+      "picks": 10,
+      "wins": 6,
+      "pick_rate": 0.0704,
+      "win_rate": 0.6,
+      "low_sample": false
+    },
+    {
+      "champion": "Yone",
+      "picks": 10,
+      "wins": 6,
+      "pick_rate": 0.0704,
+      "win_rate": 0.6,
+      "low_sample": false
+    },
+    {
+      "champion": "Xin Zhao",
+      "picks": 10,
+      "wins": 5,
+      "pick_rate": 0.0704,
+      "win_rate": 0.5,
+      "low_sample": false
+    },
+    {
+      "champion": "Nocturne",
+      "picks": 10,
+      "wins": 4,
+      "pick_rate": 0.0704,
+      "win_rate": 0.4,
+      "low_sample": false
+    },
+    {
+      "champion": "Sylas",
+      "picks": 9,
+      "wins": 8,
+      "pick_rate": 0.0634,
+      "win_rate": 0.8889,
+      "low_sample": true
+    },
+    {
+      "champion": "Seraphine",
+      "picks": 9,
+      "wins": 7,
+      "pick_rate": 0.0634,
+      "win_rate": 0.7778,
+      "low_sample": true
+    },
+    {
+      "champion": "Cassiopeia",
+      "picks": 9,
+      "wins": 6,
+      "pick_rate": 0.0634,
+      "win_rate": 0.6667,
+      "low_sample": true
+    },
+    {
+      "champion": "Karma",
+      "picks": 9,
+      "wins": 6,
+      "pick_rate": 0.0634,
+      "win_rate": 0.6667,
+      "low_sample": true
+    },
+    {
+      "champion": "Ryze",
+      "picks": 9,
+      "wins": 1,
+      "pick_rate": 0.0634,
+      "win_rate": 0.1111,
+      "low_sample": true
+    },
+    {
+      "champion": "Nami",
+      "picks": 8,
+      "wins": 6,
+      "pick_rate": 0.0563,
+      "win_rate": 0.75,
+      "low_sample": true
+    },
+    {
+      "champion": "Sion",
+      "picks": 8,
+      "wins": 6,
+      "pick_rate": 0.0563,
+      "win_rate": 0.75,
+      "low_sample": true
+    },
+    {
+      "champion": "Annie",
+      "picks": 8,
+      "wins": 5,
+      "pick_rate": 0.0563,
+      "win_rate": 0.625,
+      "low_sample": true
+    },
+    {
+      "champion": "Leona",
+      "picks": 8,
+      "wins": 3,
+      "pick_rate": 0.0563,
+      "win_rate": 0.375,
+      "low_sample": true
+    },
+    {
+      "champion": "Lulu",
+      "picks": 8,
+      "wins": 2,
+      "pick_rate": 0.0563,
+      "win_rate": 0.25,
+      "low_sample": true
+    },
+    {
+      "champion": "Ashe",
+      "picks": 7,
+      "wins": 6,
+      "pick_rate": 0.0493,
+      "win_rate": 0.8571,
+      "low_sample": true
+    },
+    {
+      "champion": "Gwen",
+      "picks": 7,
+      "wins": 5,
+      "pick_rate": 0.0493,
+      "win_rate": 0.7143,
+      "low_sample": true
+    },
+    {
+      "champion": "Lucian",
+      "picks": 7,
+      "wins": 2,
+      "pick_rate": 0.0493,
+      "win_rate": 0.2857,
+      "low_sample": true
+    },
+    {
+      "champion": "Sivir",
+      "picks": 6,
+      "wins": 6,
+      "pick_rate": 0.0423,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Braum",
+      "picks": 6,
+      "wins": 5,
+      "pick_rate": 0.0423,
+      "win_rate": 0.8333,
+      "low_sample": true
+    },
+    {
+      "champion": "Renata Glasc",
+      "picks": 6,
+      "wins": 5,
+      "pick_rate": 0.0423,
+      "win_rate": 0.8333,
+      "low_sample": true
+    },
+    {
+      "champion": "Galio",
+      "picks": 6,
+      "wins": 4,
+      "pick_rate": 0.0423,
+      "win_rate": 0.6667,
+      "low_sample": true
+    },
+    {
+      "champion": "Kalista",
+      "picks": 6,
+      "wins": 4,
+      "pick_rate": 0.0423,
+      "win_rate": 0.6667,
+      "low_sample": true
+    },
+    {
+      "champion": "Maokai",
+      "picks": 6,
+      "wins": 4,
+      "pick_rate": 0.0423,
+      "win_rate": 0.6667,
+      "low_sample": true
+    },
+    {
+      "champion": "Rell",
+      "picks": 6,
+      "wins": 4,
+      "pick_rate": 0.0423,
+      "win_rate": 0.6667,
+      "low_sample": true
+    },
+    {
+      "champion": "Trundle",
+      "picks": 6,
+      "wins": 4,
+      "pick_rate": 0.0423,
+      "win_rate": 0.6667,
+      "low_sample": true
+    },
+    {
+      "champion": "Viktor",
+      "picks": 6,
+      "wins": 4,
+      "pick_rate": 0.0423,
+      "win_rate": 0.6667,
+      "low_sample": true
+    },
+    {
+      "champion": "Pantheon",
+      "picks": 6,
+      "wins": 3,
+      "pick_rate": 0.0423,
+      "win_rate": 0.5,
+      "low_sample": true
+    },
+    {
+      "champion": "Naafiri",
+      "picks": 5,
+      "wins": 5,
+      "pick_rate": 0.0352,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Camille",
+      "picks": 5,
+      "wins": 4,
+      "pick_rate": 0.0352,
+      "win_rate": 0.8,
+      "low_sample": true
+    },
+    {
+      "champion": "Akali",
+      "picks": 5,
+      "wins": 3,
+      "pick_rate": 0.0352,
+      "win_rate": 0.6,
+      "low_sample": true
+    },
+    {
+      "champion": "Hwei",
+      "picks": 5,
+      "wins": 2,
+      "pick_rate": 0.0352,
+      "win_rate": 0.4,
+      "low_sample": true
+    },
+    {
+      "champion": "Jayce",
+      "picks": 5,
+      "wins": 2,
+      "pick_rate": 0.0352,
+      "win_rate": 0.4,
+      "low_sample": true
+    },
+    {
+      "champion": "Lee Sin",
+      "picks": 5,
+      "wins": 2,
+      "pick_rate": 0.0352,
+      "win_rate": 0.4,
+      "low_sample": true
+    },
+    {
+      "champion": "Twisted Fate",
+      "picks": 5,
+      "wins": 2,
+      "pick_rate": 0.0352,
+      "win_rate": 0.4,
+      "low_sample": true
+    },
+    {
+      "champion": "Kai'Sa",
+      "picks": 4,
+      "wins": 3,
+      "pick_rate": 0.0282,
+      "win_rate": 0.75,
+      "low_sample": true
+    },
+    {
+      "champion": "Syndra",
+      "picks": 4,
+      "wins": 3,
+      "pick_rate": 0.0282,
+      "win_rate": 0.75,
+      "low_sample": true
+    },
+    {
+      "champion": "Malphite",
+      "picks": 4,
+      "wins": 2,
+      "pick_rate": 0.0282,
+      "win_rate": 0.5,
+      "low_sample": true
+    },
+    {
+      "champion": "Rek'Sai",
+      "picks": 4,
+      "wins": 2,
+      "pick_rate": 0.0282,
+      "win_rate": 0.5,
+      "low_sample": true
+    },
+    {
+      "champion": "Caitlyn",
+      "picks": 4,
+      "wins": 1,
+      "pick_rate": 0.0282,
+      "win_rate": 0.25,
+      "low_sample": true
+    },
+    {
+      "champion": "Tristana",
+      "picks": 3,
+      "wins": 2,
+      "pick_rate": 0.0211,
+      "win_rate": 0.6667,
+      "low_sample": true
+    },
+    {
+      "champion": "Aatrox",
+      "picks": 3,
+      "wins": 1,
+      "pick_rate": 0.0211,
+      "win_rate": 0.3333,
+      "low_sample": true
+    },
+    {
+      "champion": "Yorick",
+      "picks": 3,
+      "wins": 1,
+      "pick_rate": 0.0211,
+      "win_rate": 0.3333,
+      "low_sample": true
+    },
+    {
+      "champion": "Ahri",
+      "picks": 3,
+      "wins": 0,
+      "pick_rate": 0.0211,
+      "win_rate": 0.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Milio",
+      "picks": 3,
+      "wins": 0,
+      "pick_rate": 0.0211,
+      "win_rate": 0.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Lillia",
+      "picks": 2,
+      "wins": 2,
+      "pick_rate": 0.0141,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Miss Fortune",
+      "picks": 2,
+      "wins": 2,
+      "pick_rate": 0.0141,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Shen",
+      "picks": 2,
+      "wins": 2,
+      "pick_rate": 0.0141,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Xayah",
+      "picks": 2,
+      "wins": 2,
+      "pick_rate": 0.0141,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Zyra",
+      "picks": 2,
+      "wins": 2,
+      "pick_rate": 0.0141,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Aphelios",
+      "picks": 2,
+      "wins": 1,
+      "pick_rate": 0.0141,
+      "win_rate": 0.5,
+      "low_sample": true
+    },
+    {
+      "champion": "Nidalee",
+      "picks": 2,
+      "wins": 1,
+      "pick_rate": 0.0141,
+      "win_rate": 0.5,
+      "low_sample": true
+    },
+    {
+      "champion": "Olaf",
+      "picks": 2,
+      "wins": 1,
+      "pick_rate": 0.0141,
+      "win_rate": 0.5,
+      "low_sample": true
+    },
+    {
+      "champion": "Ornn",
+      "picks": 2,
+      "wins": 1,
+      "pick_rate": 0.0141,
+      "win_rate": 0.5,
+      "low_sample": true
+    },
+    {
+      "champion": "Thresh",
+      "picks": 2,
+      "wins": 1,
+      "pick_rate": 0.0141,
+      "win_rate": 0.5,
+      "low_sample": true
+    },
+    {
+      "champion": "Zeri",
+      "picks": 2,
+      "wins": 1,
+      "pick_rate": 0.0141,
+      "win_rate": 0.5,
+      "low_sample": true
+    },
+    {
+      "champion": "Anivia",
+      "picks": 2,
+      "wins": 0,
+      "pick_rate": 0.0141,
+      "win_rate": 0.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Smolder",
+      "picks": 2,
+      "wins": 0,
+      "pick_rate": 0.0141,
+      "win_rate": 0.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Kennen",
+      "picks": 1,
+      "wins": 1,
+      "pick_rate": 0.007,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Locke",
+      "picks": 1,
+      "wins": 1,
+      "pick_rate": 0.007,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Swain",
+      "picks": 1,
+      "wins": 1,
+      "pick_rate": 0.007,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Vayne",
+      "picks": 1,
+      "wins": 1,
+      "pick_rate": 0.007,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Zaahen",
+      "picks": 1,
+      "wins": 1,
+      "pick_rate": 0.007,
+      "win_rate": 1.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Blitzcrank",
+      "picks": 1,
+      "wins": 0,
+      "pick_rate": 0.007,
+      "win_rate": 0.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Jax",
+      "picks": 1,
+      "wins": 0,
+      "pick_rate": 0.007,
+      "win_rate": 0.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Mel",
+      "picks": 1,
+      "wins": 0,
+      "pick_rate": 0.007,
+      "win_rate": 0.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Vex",
+      "picks": 1,
+      "wins": 0,
+      "pick_rate": 0.007,
+      "win_rate": 0.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Vladimir",
+      "picks": 1,
+      "wins": 0,
+      "pick_rate": 0.007,
+      "win_rate": 0.0,
+      "low_sample": true
+    },
+    {
+      "champion": "Volibear",
+      "picks": 1,
+      "wins": 0,
+      "pick_rate": 0.007,
+      "win_rate": 0.0,
+      "low_sample": true
+    }
+  ],
+  "player_pools": [
+    {
+      "player_id": "24165",
+      "player": "Blaber",
+      "games": 142,
+      "wins": 90,
+      "win_rate": 0.6338,
+      "champions_played": 20,
+      "pool": [
+        {
+          "champion": "Vi",
+          "picks": 18,
+          "wins": 12,
+          "pick_rate": 0.1268,
+          "win_rate": 0.6667,
+          "low_sample": false
+        },
+        {
+          "champion": "Wukong",
+          "picks": 15,
+          "wins": 10,
+          "pick_rate": 0.1056,
+          "win_rate": 0.6667,
+          "low_sample": false
+        },
+        {
+          "champion": "Sejuani",
+          "picks": 15,
+          "wins": 9,
+          "pick_rate": 0.1056,
+          "win_rate": 0.6,
+          "low_sample": false
+        },
+        {
+          "champion": "Skarner",
+          "picks": 13,
+          "wins": 7,
+          "pick_rate": 0.0915,
+          "win_rate": 0.5385,
+          "low_sample": false
+        },
+        {
+          "champion": "Jarvan IV",
+          "picks": 12,
+          "wins": 7,
+          "pick_rate": 0.0845,
+          "win_rate": 0.5833,
+          "low_sample": false
+        },
+        {
+          "champion": "Xin Zhao",
+          "picks": 10,
+          "wins": 5,
+          "pick_rate": 0.0704,
+          "win_rate": 0.5,
+          "low_sample": false
+        },
+        {
+          "champion": "Nocturne",
+          "picks": 10,
+          "wins": 4,
+          "pick_rate": 0.0704,
+          "win_rate": 0.4,
+          "low_sample": false
+        },
+        {
+          "champion": "Poppy",
+          "picks": 8,
+          "wins": 7,
+          "pick_rate": 0.0563,
+          "win_rate": 0.875,
+          "low_sample": true
+        },
+        {
+          "champion": "Maokai",
+          "picks": 6,
+          "wins": 4,
+          "pick_rate": 0.0423,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Trundle",
+          "picks": 6,
+          "wins": 4,
+          "pick_rate": 0.0423,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Naafiri",
+          "picks": 5,
+          "wins": 5,
+          "pick_rate": 0.0352,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Pantheon",
+          "picks": 5,
+          "wins": 3,
+          "pick_rate": 0.0352,
+          "win_rate": 0.6,
+          "low_sample": true
+        },
+        {
+          "champion": "Lee Sin",
+          "picks": 5,
+          "wins": 2,
+          "pick_rate": 0.0352,
+          "win_rate": 0.4,
+          "low_sample": true
+        },
+        {
+          "champion": "Ambessa",
+          "picks": 4,
+          "wins": 3,
+          "pick_rate": 0.0282,
+          "win_rate": 0.75,
+          "low_sample": true
+        },
+        {
+          "champion": "Lillia",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.0141,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Malphite",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.0141,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Zyra",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.0141,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Nidalee",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.0141,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Zaahen",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.007,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Rek'Sai",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.007,
+          "win_rate": 0.0,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "player_id": "22956",
+      "player": "Thanatos",
+      "games": 142,
+      "wins": 90,
+      "win_rate": 0.6338,
+      "champions_played": 25,
+      "pool": [
+        {
+          "champion": "Renekton",
+          "picks": 21,
+          "wins": 14,
+          "pick_rate": 0.1479,
+          "win_rate": 0.6667,
+          "low_sample": false
+        },
+        {
+          "champion": "Gnar",
+          "picks": 20,
+          "wins": 16,
+          "pick_rate": 0.1408,
+          "win_rate": 0.8,
+          "low_sample": false
+        },
+        {
+          "champion": "Ambessa",
+          "picks": 16,
+          "wins": 11,
+          "pick_rate": 0.1127,
+          "win_rate": 0.6875,
+          "low_sample": false
+        },
+        {
+          "champion": "Rumble",
+          "picks": 15,
+          "wins": 9,
+          "pick_rate": 0.1056,
+          "win_rate": 0.6,
+          "low_sample": false
+        },
+        {
+          "champion": "K'Sante",
+          "picks": 14,
+          "wins": 8,
+          "pick_rate": 0.0986,
+          "win_rate": 0.5714,
+          "low_sample": false
+        },
+        {
+          "champion": "Gwen",
+          "picks": 7,
+          "wins": 5,
+          "pick_rate": 0.0493,
+          "win_rate": 0.7143,
+          "low_sample": true
+        },
+        {
+          "champion": "Sion",
+          "picks": 7,
+          "wins": 5,
+          "pick_rate": 0.0493,
+          "win_rate": 0.7143,
+          "low_sample": true
+        },
+        {
+          "champion": "Aurora",
+          "picks": 6,
+          "wins": 5,
+          "pick_rate": 0.0423,
+          "win_rate": 0.8333,
+          "low_sample": true
+        },
+        {
+          "champion": "Jayce",
+          "picks": 5,
+          "wins": 2,
+          "pick_rate": 0.0352,
+          "win_rate": 0.4,
+          "low_sample": true
+        },
+        {
+          "champion": "Camille",
+          "picks": 4,
+          "wins": 4,
+          "pick_rate": 0.0282,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Galio",
+          "picks": 3,
+          "wins": 2,
+          "pick_rate": 0.0211,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Rek'Sai",
+          "picks": 3,
+          "wins": 2,
+          "pick_rate": 0.0211,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Aatrox",
+          "picks": 3,
+          "wins": 1,
+          "pick_rate": 0.0211,
+          "win_rate": 0.3333,
+          "low_sample": true
+        },
+        {
+          "champion": "Yorick",
+          "picks": 3,
+          "wins": 1,
+          "pick_rate": 0.0211,
+          "win_rate": 0.3333,
+          "low_sample": true
+        },
+        {
+          "champion": "Olaf",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.0141,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Ornn",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.0141,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Varus",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.0141,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Malphite",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.0141,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Kennen",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.007,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Vayne",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.007,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Corki",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.007,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Jax",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.007,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Twisted Fate",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.007,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Vladimir",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.007,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Volibear",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.007,
+          "win_rate": 0.0,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "player_id": "24843",
+      "player": "Vulcan",
+      "games": 142,
+      "wins": 90,
+      "win_rate": 0.6338,
+      "champions_played": 20,
+      "pool": [
+        {
+          "champion": "Alistar",
+          "picks": 17,
+          "wins": 13,
+          "pick_rate": 0.1197,
+          "win_rate": 0.7647,
+          "low_sample": false
+        },
+        {
+          "champion": "Nautilus",
+          "picks": 15,
+          "wins": 8,
+          "pick_rate": 0.1056,
+          "win_rate": 0.5333,
+          "low_sample": false
+        },
+        {
+          "champion": "Rakan",
+          "picks": 13,
+          "wins": 10,
+          "pick_rate": 0.0915,
+          "win_rate": 0.7692,
+          "low_sample": false
+        },
+        {
+          "champion": "Bard",
+          "picks": 13,
+          "wins": 8,
+          "pick_rate": 0.0915,
+          "win_rate": 0.6154,
+          "low_sample": false
+        },
+        {
+          "champion": "Neeko",
+          "picks": 10,
+          "wins": 8,
+          "pick_rate": 0.0704,
+          "win_rate": 0.8,
+          "low_sample": false
+        },
+        {
+          "champion": "Seraphine",
+          "picks": 9,
+          "wins": 7,
+          "pick_rate": 0.0634,
+          "win_rate": 0.7778,
+          "low_sample": true
+        },
+        {
+          "champion": "Karma",
+          "picks": 9,
+          "wins": 6,
+          "pick_rate": 0.0634,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Nami",
+          "picks": 8,
+          "wins": 6,
+          "pick_rate": 0.0563,
+          "win_rate": 0.75,
+          "low_sample": true
+        },
+        {
+          "champion": "Leona",
+          "picks": 8,
+          "wins": 3,
+          "pick_rate": 0.0563,
+          "win_rate": 0.375,
+          "low_sample": true
+        },
+        {
+          "champion": "Lulu",
+          "picks": 8,
+          "wins": 2,
+          "pick_rate": 0.0563,
+          "win_rate": 0.25,
+          "low_sample": true
+        },
+        {
+          "champion": "Braum",
+          "picks": 6,
+          "wins": 5,
+          "pick_rate": 0.0423,
+          "win_rate": 0.8333,
+          "low_sample": true
+        },
+        {
+          "champion": "Renata Glasc",
+          "picks": 6,
+          "wins": 5,
+          "pick_rate": 0.0423,
+          "win_rate": 0.8333,
+          "low_sample": true
+        },
+        {
+          "champion": "Rell",
+          "picks": 6,
+          "wins": 4,
+          "pick_rate": 0.0423,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Poppy",
+          "picks": 4,
+          "wins": 2,
+          "pick_rate": 0.0282,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Milio",
+          "picks": 3,
+          "wins": 0,
+          "pick_rate": 0.0211,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Shen",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.0141,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Thresh",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.0141,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Blitzcrank",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.007,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Camille",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.007,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Pantheon",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.007,
+          "win_rate": 0.0,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "player_id": "27211",
+      "player": "Zven",
+      "games": 110,
+      "wins": 72,
+      "win_rate": 0.6545,
+      "champions_played": 20,
+      "pool": [
+        {
+          "champion": "Corki",
+          "picks": 18,
+          "wins": 14,
+          "pick_rate": 0.1636,
+          "win_rate": 0.7778,
+          "low_sample": false
+        },
+        {
+          "champion": "Ezreal",
+          "picks": 13,
+          "wins": 8,
+          "pick_rate": 0.1182,
+          "win_rate": 0.6154,
+          "low_sample": false
+        },
+        {
+          "champion": "Varus",
+          "picks": 12,
+          "wins": 10,
+          "pick_rate": 0.1091,
+          "win_rate": 0.8333,
+          "low_sample": false
+        },
+        {
+          "champion": "Senna",
+          "picks": 10,
+          "wins": 6,
+          "pick_rate": 0.0909,
+          "win_rate": 0.6,
+          "low_sample": false
+        },
+        {
+          "champion": "Yunara",
+          "picks": 9,
+          "wins": 4,
+          "pick_rate": 0.0818,
+          "win_rate": 0.4444,
+          "low_sample": true
+        },
+        {
+          "champion": "Jhin",
+          "picks": 8,
+          "wins": 5,
+          "pick_rate": 0.0727,
+          "win_rate": 0.625,
+          "low_sample": true
+        },
+        {
+          "champion": "Sivir",
+          "picks": 6,
+          "wins": 6,
+          "pick_rate": 0.0545,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Ashe",
+          "picks": 6,
+          "wins": 5,
+          "pick_rate": 0.0545,
+          "win_rate": 0.8333,
+          "low_sample": true
+        },
+        {
+          "champion": "Ziggs",
+          "picks": 5,
+          "wins": 3,
+          "pick_rate": 0.0455,
+          "win_rate": 0.6,
+          "low_sample": true
+        },
+        {
+          "champion": "Lucian",
+          "picks": 5,
+          "wins": 2,
+          "pick_rate": 0.0455,
+          "win_rate": 0.4,
+          "low_sample": true
+        },
+        {
+          "champion": "Kai'Sa",
+          "picks": 4,
+          "wins": 3,
+          "pick_rate": 0.0364,
+          "win_rate": 0.75,
+          "low_sample": true
+        },
+        {
+          "champion": "Miss Fortune",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.0182,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Xayah",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.0182,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Tristana",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.0182,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Kalista",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.0182,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Smolder",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.0182,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Aphelios",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0091,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Caitlyn",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.0091,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Mel",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.0091,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Zeri",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.0091,
+          "win_rate": 0.0,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "player_id": "21565",
+      "player": "Loki ",
+      "games": 96,
+      "wins": 60,
+      "win_rate": 0.625,
+      "champions_played": 20,
+      "pool": [
+        {
+          "champion": "Orianna",
+          "picks": 11,
+          "wins": 8,
+          "pick_rate": 0.1146,
+          "win_rate": 0.7273,
+          "low_sample": false
+        },
+        {
+          "champion": "Azir",
+          "picks": 10,
+          "wins": 7,
+          "pick_rate": 0.1042,
+          "win_rate": 0.7,
+          "low_sample": false
+        },
+        {
+          "champion": "Taliyah",
+          "picks": 10,
+          "wins": 7,
+          "pick_rate": 0.1042,
+          "win_rate": 0.7,
+          "low_sample": false
+        },
+        {
+          "champion": "Yone",
+          "picks": 10,
+          "wins": 6,
+          "pick_rate": 0.1042,
+          "win_rate": 0.6,
+          "low_sample": false
+        },
+        {
+          "champion": "Sylas",
+          "picks": 9,
+          "wins": 8,
+          "pick_rate": 0.0938,
+          "win_rate": 0.8889,
+          "low_sample": true
+        },
+        {
+          "champion": "Aurora",
+          "picks": 8,
+          "wins": 5,
+          "pick_rate": 0.0833,
+          "win_rate": 0.625,
+          "low_sample": true
+        },
+        {
+          "champion": "Ryze",
+          "picks": 8,
+          "wins": 1,
+          "pick_rate": 0.0833,
+          "win_rate": 0.125,
+          "low_sample": true
+        },
+        {
+          "champion": "Akali",
+          "picks": 5,
+          "wins": 3,
+          "pick_rate": 0.0521,
+          "win_rate": 0.6,
+          "low_sample": true
+        },
+        {
+          "champion": "Corki",
+          "picks": 4,
+          "wins": 3,
+          "pick_rate": 0.0417,
+          "win_rate": 0.75,
+          "low_sample": true
+        },
+        {
+          "champion": "Syndra",
+          "picks": 4,
+          "wins": 3,
+          "pick_rate": 0.0417,
+          "win_rate": 0.75,
+          "low_sample": true
+        },
+        {
+          "champion": "Hwei",
+          "picks": 4,
+          "wins": 2,
+          "pick_rate": 0.0417,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Viktor",
+          "picks": 3,
+          "wins": 2,
+          "pick_rate": 0.0312,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Ahri",
+          "picks": 3,
+          "wins": 0,
+          "pick_rate": 0.0312,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Cassiopeia",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0104,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Galio",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0104,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Locke",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0104,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Tristana",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0104,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Zeri",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0104,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Twisted Fate",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.0104,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Vex",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.0104,
+          "win_rate": 0.0,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "player_id": "23510",
+      "player": "APA",
+      "games": 46,
+      "wins": 30,
+      "win_rate": 0.6522,
+      "champions_played": 19,
+      "pool": [
+        {
+          "champion": "Taliyah",
+          "picks": 19,
+          "wins": 13,
+          "pick_rate": 0.413,
+          "win_rate": 0.6842,
+          "low_sample": false
+        },
+        {
+          "champion": "Ziggs",
+          "picks": 14,
+          "wins": 7,
+          "pick_rate": 0.3043,
+          "win_rate": 0.5,
+          "low_sample": false
+        },
+        {
+          "champion": "Annie",
+          "picks": 13,
+          "wins": 7,
+          "pick_rate": 0.2826,
+          "win_rate": 0.5385,
+          "low_sample": false
+        },
+        {
+          "champion": "Azir",
+          "picks": 12,
+          "wins": 8,
+          "pick_rate": 0.2609,
+          "win_rate": 0.6667,
+          "low_sample": false
+        },
+        {
+          "champion": "Cassiopeia",
+          "picks": 10,
+          "wins": 6,
+          "pick_rate": 0.2174,
+          "win_rate": 0.6,
+          "low_sample": false
+        },
+        {
+          "champion": "Neeko",
+          "picks": 6,
+          "wins": 4,
+          "pick_rate": 0.1304,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Orianna",
+          "picks": 4,
+          "wins": 4,
+          "pick_rate": 0.087,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Viktor",
+          "picks": 4,
+          "wins": 2,
+          "pick_rate": 0.087,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Twisted Fate",
+          "picks": 3,
+          "wins": 2,
+          "pick_rate": 0.0652,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Galio",
+          "picks": 3,
+          "wins": 1,
+          "pick_rate": 0.0652,
+          "win_rate": 0.3333,
+          "low_sample": true
+        },
+        {
+          "champion": "Hwei",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.0435,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Ahri",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.0435,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Anivia",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.0435,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Aurora",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.0435,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Ryze",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.0435,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Aurelion Sol",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0217,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Sion",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0217,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Swain",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0217,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Tristana",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0217,
+          "win_rate": 1.0,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "player_id": "23468",
+      "player": "Tactical",
+      "games": 32,
+      "wins": 18,
+      "win_rate": 0.5625,
+      "champions_played": 12,
+      "pool": [
+        {
+          "champion": "Ezreal",
+          "picks": 9,
+          "wins": 6,
+          "pick_rate": 0.2812,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Kalista",
+          "picks": 4,
+          "wins": 4,
+          "pick_rate": 0.125,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Ziggs",
+          "picks": 3,
+          "wins": 2,
+          "pick_rate": 0.0938,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Caitlyn",
+          "picks": 3,
+          "wins": 1,
+          "pick_rate": 0.0938,
+          "win_rate": 0.3333,
+          "low_sample": true
+        },
+        {
+          "champion": "Yunara",
+          "picks": 3,
+          "wins": 1,
+          "pick_rate": 0.0938,
+          "win_rate": 0.3333,
+          "low_sample": true
+        },
+        {
+          "champion": "Cassiopeia",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.0625,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Jhin",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.0625,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Lucian",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.0625,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Ashe",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0312,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Corki",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.0312,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Aphelios",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.0312,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Viktor",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.0312,
+          "win_rate": 0.0,
+          "low_sample": true
+        }
+      ]
+    }
+  ],
+  "opponents": [
+    {
+      "team_id": "340",
+      "team": "FlyQuest",
+      "games_vs_c9": 32,
+      "c9_wins_vs": 19,
+      "c9_win_rate_vs": 0.5938,
+      "their_top_picks_vs_c9": [
+        {
+          "champion": "Rumble",
+          "picks": 6,
+          "wins": 2,
+          "pick_rate": 0.1875,
+          "win_rate": 0.3333,
+          "low_sample": true
+        },
+        {
+          "champion": "Azir",
+          "picks": 4,
+          "wins": 1,
+          "pick_rate": 0.125,
+          "win_rate": 0.25,
+          "low_sample": true
+        },
+        {
+          "champion": "Jhin",
+          "picks": 4,
+          "wins": 1,
+          "pick_rate": 0.125,
+          "win_rate": 0.25,
+          "low_sample": true
+        },
+        {
+          "champion": "Lucian",
+          "picks": 4,
+          "wins": 1,
+          "pick_rate": 0.125,
+          "win_rate": 0.25,
+          "low_sample": true
+        },
+        {
+          "champion": "Viktor",
+          "picks": 4,
+          "wins": 1,
+          "pick_rate": 0.125,
+          "win_rate": 0.25,
+          "low_sample": true
+        }
+      ],
+      "c9_top_picks_vs_them": [
+        {
+          "champion": "Renekton",
+          "picks": 6,
+          "wins": 5,
+          "pick_rate": 0.1875,
+          "win_rate": 0.8333,
+          "low_sample": true
+        },
+        {
+          "champion": "Ambessa",
+          "picks": 6,
+          "wins": 4,
+          "pick_rate": 0.1875,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Ezreal",
+          "picks": 6,
+          "wins": 3,
+          "pick_rate": 0.1875,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Vi",
+          "picks": 6,
+          "wins": 3,
+          "pick_rate": 0.1875,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Alistar",
+          "picks": 5,
+          "wins": 4,
+          "pick_rate": 0.1562,
+          "win_rate": 0.8,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "team_id": "54198",
+      "team": "LYON",
+      "games_vs_c9": 30,
+      "c9_wins_vs": 16,
+      "c9_win_rate_vs": 0.5333,
+      "their_top_picks_vs_c9": [
+        {
+          "champion": "Rumble",
+          "picks": 6,
+          "wins": 4,
+          "pick_rate": 0.2,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Ryze",
+          "picks": 5,
+          "wins": 4,
+          "pick_rate": 0.1667,
+          "win_rate": 0.8,
+          "low_sample": true
+        },
+        {
+          "champion": "Renekton",
+          "picks": 5,
+          "wins": 2,
+          "pick_rate": 0.1667,
+          "win_rate": 0.4,
+          "low_sample": true
+        },
+        {
+          "champion": "Wukong",
+          "picks": 5,
+          "wins": 1,
+          "pick_rate": 0.1667,
+          "win_rate": 0.2,
+          "low_sample": true
+        },
+        {
+          "champion": "Varus",
+          "picks": 4,
+          "wins": 3,
+          "pick_rate": 0.1333,
+          "win_rate": 0.75,
+          "low_sample": true
+        }
+      ],
+      "c9_top_picks_vs_them": [
+        {
+          "champion": "Corki",
+          "picks": 6,
+          "wins": 5,
+          "pick_rate": 0.2,
+          "win_rate": 0.8333,
+          "low_sample": true
+        },
+        {
+          "champion": "Orianna",
+          "picks": 6,
+          "wins": 5,
+          "pick_rate": 0.2,
+          "win_rate": 0.8333,
+          "low_sample": true
+        },
+        {
+          "champion": "Renekton",
+          "picks": 5,
+          "wins": 3,
+          "pick_rate": 0.1667,
+          "win_rate": 0.6,
+          "low_sample": true
+        },
+        {
+          "champion": "Ziggs",
+          "picks": 5,
+          "wins": 3,
+          "pick_rate": 0.1667,
+          "win_rate": 0.6,
+          "low_sample": true
+        },
+        {
+          "champion": "Ezreal",
+          "picks": 4,
+          "wins": 3,
+          "pick_rate": 0.1333,
+          "win_rate": 0.75,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "team_id": "47363",
+      "team": "Team Liquid Alienware",
+      "games_vs_c9": 24,
+      "c9_wins_vs": 14,
+      "c9_win_rate_vs": 0.5833,
+      "their_top_picks_vs_c9": [
+        {
+          "champion": "Rumble",
+          "picks": 5,
+          "wins": 1,
+          "pick_rate": 0.2083,
+          "win_rate": 0.2,
+          "low_sample": true
+        },
+        {
+          "champion": "Sion",
+          "picks": 5,
+          "wins": 1,
+          "pick_rate": 0.2083,
+          "win_rate": 0.2,
+          "low_sample": true
+        },
+        {
+          "champion": "Xin Zhao",
+          "picks": 5,
+          "wins": 0,
+          "pick_rate": 0.2083,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Ezreal",
+          "picks": 4,
+          "wins": 2,
+          "pick_rate": 0.1667,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Renekton",
+          "picks": 4,
+          "wins": 1,
+          "pick_rate": 0.1667,
+          "win_rate": 0.25,
+          "low_sample": true
+        }
+      ],
+      "c9_top_picks_vs_them": [
+        {
+          "champion": "Aurora",
+          "picks": 6,
+          "wins": 5,
+          "pick_rate": 0.25,
+          "win_rate": 0.8333,
+          "low_sample": true
+        },
+        {
+          "champion": "Azir",
+          "picks": 5,
+          "wins": 4,
+          "pick_rate": 0.2083,
+          "win_rate": 0.8,
+          "low_sample": true
+        },
+        {
+          "champion": "Varus",
+          "picks": 4,
+          "wins": 4,
+          "pick_rate": 0.1667,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Ezreal",
+          "picks": 4,
+          "wins": 3,
+          "pick_rate": 0.1667,
+          "win_rate": 0.75,
+          "low_sample": true
+        },
+        {
+          "champion": "Nautilus",
+          "picks": 4,
+          "wins": 3,
+          "pick_rate": 0.1667,
+          "win_rate": 0.75,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "team_id": "53073",
+      "team": "Shopify Rebellion",
+      "games_vs_c9": 17,
+      "c9_wins_vs": 13,
+      "c9_win_rate_vs": 0.7647,
+      "their_top_picks_vs_c9": [
+        {
+          "champion": "Leona",
+          "picks": 4,
+          "wins": 2,
+          "pick_rate": 0.2353,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Orianna",
+          "picks": 4,
+          "wins": 1,
+          "pick_rate": 0.2353,
+          "win_rate": 0.25,
+          "low_sample": true
+        },
+        {
+          "champion": "Nautilus",
+          "picks": 4,
+          "wins": 0,
+          "pick_rate": 0.2353,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Vi",
+          "picks": 3,
+          "wins": 1,
+          "pick_rate": 0.1765,
+          "win_rate": 0.3333,
+          "low_sample": true
+        },
+        {
+          "champion": "Aurora",
+          "picks": 3,
+          "wins": 0,
+          "pick_rate": 0.1765,
+          "win_rate": 0.0,
+          "low_sample": true
+        }
+      ],
+      "c9_top_picks_vs_them": [
+        {
+          "champion": "Varus",
+          "picks": 4,
+          "wins": 4,
+          "pick_rate": 0.2353,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Akali",
+          "picks": 3,
+          "wins": 3,
+          "pick_rate": 0.1765,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Ambessa",
+          "picks": 3,
+          "wins": 3,
+          "pick_rate": 0.1765,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Gnar",
+          "picks": 3,
+          "wins": 2,
+          "pick_rate": 0.1765,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Jarvan IV",
+          "picks": 3,
+          "wins": 2,
+          "pick_rate": 0.1765,
+          "win_rate": 0.6667,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "team_id": "52416",
+      "team": "Disguised",
+      "games_vs_c9": 13,
+      "c9_wins_vs": 10,
+      "c9_win_rate_vs": 0.7692,
+      "their_top_picks_vs_c9": [
+        {
+          "champion": "Miss Fortune",
+          "picks": 4,
+          "wins": 0,
+          "pick_rate": 0.3077,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Anivia",
+          "picks": 3,
+          "wins": 1,
+          "pick_rate": 0.2308,
+          "win_rate": 0.3333,
+          "low_sample": true
+        },
+        {
+          "champion": "Azir",
+          "picks": 3,
+          "wins": 0,
+          "pick_rate": 0.2308,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Lucian",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.1538,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Rell",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.1538,
+          "win_rate": 0.5,
+          "low_sample": true
+        }
+      ],
+      "c9_top_picks_vs_them": [
+        {
+          "champion": "Corki",
+          "picks": 4,
+          "wins": 4,
+          "pick_rate": 0.3077,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Renekton",
+          "picks": 3,
+          "wins": 2,
+          "pick_rate": 0.2308,
+          "win_rate": 0.6667,
+          "low_sample": true
+        },
+        {
+          "champion": "Ambessa",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.1538,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Cassiopeia",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.1538,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Gwen",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.1538,
+          "win_rate": 1.0,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "team_id": "47499",
+      "team": "Dignitas",
+      "games_vs_c9": 9,
+      "c9_wins_vs": 7,
+      "c9_win_rate_vs": 0.7778,
+      "their_top_picks_vs_c9": [
+        {
+          "champion": "Xin Zhao",
+          "picks": 3,
+          "wins": 1,
+          "pick_rate": 0.3333,
+          "win_rate": 0.3333,
+          "low_sample": true
+        },
+        {
+          "champion": "Lucian",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.2222,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Jarvan IV",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.2222,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Rakan",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.2222,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Ryze",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.2222,
+          "win_rate": 0.0,
+          "low_sample": true
+        }
+      ],
+      "c9_top_picks_vs_them": [
+        {
+          "champion": "Vi",
+          "picks": 3,
+          "wins": 3,
+          "pick_rate": 0.3333,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Alistar",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.2222,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Ambessa",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.2222,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Cassiopeia",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.2222,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Gnar",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.2222,
+          "win_rate": 1.0,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "team_id": "56389",
+      "team": "Sentinels",
+      "games_vs_c9": 8,
+      "c9_wins_vs": 7,
+      "c9_win_rate_vs": 0.875,
+      "their_top_picks_vs_c9": [
+        {
+          "champion": "Caitlyn",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.25,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Ryze",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.25,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Ambessa",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.25,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Bard",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.25,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Jarvan IV",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.25,
+          "win_rate": 0.0,
+          "low_sample": true
+        }
+      ],
+      "c9_top_picks_vs_them": [
+        {
+          "champion": "Gnar",
+          "picks": 3,
+          "wins": 3,
+          "pick_rate": 0.375,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Pantheon",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.25,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Wukong",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.25,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Yunara",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.25,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Aphelios",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.125,
+          "win_rate": 1.0,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "team_id": "47497",
+      "team": "100 Thieves",
+      "games_vs_c9": 7,
+      "c9_wins_vs": 2,
+      "c9_win_rate_vs": 0.2857,
+      "their_top_picks_vs_c9": [
+        {
+          "champion": "Ambessa",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.2857,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Vi",
+          "picks": 2,
+          "wins": 2,
+          "pick_rate": 0.2857,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Varus",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.2857,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Akali",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.1429,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Aphelios",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.1429,
+          "win_rate": 1.0,
+          "low_sample": true
+        }
+      ],
+      "c9_top_picks_vs_them": [
+        {
+          "champion": "Renekton",
+          "picks": 2,
+          "wins": 1,
+          "pick_rate": 0.2857,
+          "win_rate": 0.5,
+          "low_sample": true
+        },
+        {
+          "champion": "Alistar",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.2857,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Leona",
+          "picks": 2,
+          "wins": 0,
+          "pick_rate": 0.2857,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Aurora",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.1429,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Neeko",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.1429,
+          "win_rate": 1.0,
+          "low_sample": true
+        }
+      ]
+    },
+    {
+      "team_id": "47960",
+      "team": "LOUD",
+      "games_vs_c9": 2,
+      "c9_wins_vs": 2,
+      "c9_win_rate_vs": 1.0,
+      "their_top_picks_vs_c9": [
+        {
+          "champion": "Ahri",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.5,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Aurora",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.5,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Ezreal",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.5,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Jax",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.5,
+          "win_rate": 0.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Kai'Sa",
+          "picks": 1,
+          "wins": 0,
+          "pick_rate": 0.5,
+          "win_rate": 0.0,
+          "low_sample": true
+        }
+      ],
+      "c9_top_picks_vs_them": [
+        {
+          "champion": "Ambessa",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.5,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Corki",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.5,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Hwei",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.5,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "K'Sante",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.5,
+          "win_rate": 1.0,
+          "low_sample": true
+        },
+        {
+          "champion": "Poppy",
+          "picks": 1,
+          "wins": 1,
+          "pick_rate": 0.5,
+          "win_rate": 1.0,
+          "low_sample": true
+        }
+      ]
+    }
+  ]
+}

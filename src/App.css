@@ -1,0 +1,231 @@
+/* Fearless Draft Lab — Week 1 styles.
+ * Colour tokens from the design wireframe (docs/design/wireframe.md §2):
+ * Cloud9 blue on dark navy, original marks only — no Riot/Cloud9 artwork. */
+
+.app {
+  --c9-blue: #0090d4;
+  --c9-sky: #4fc3f7;
+  --navy-950: #060b14;
+  --navy-900: #0a1424;
+  --navy-800: #0e1b30;
+  --navy-700: #16263f;
+  --line: #1e3355;
+  --line-strong: #2c4a73;
+  --text: #eaf2fb;
+  --muted: #8fa6c2;
+  --faint: #5b7391;
+  --blue-team: #2e9bff;
+  --red-team: #ff4d5e;
+  --gold: #ffc857;
+  --green: #34d399;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+  color: var(--text);
+  background: var(--navy-950);
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.45;
+}
+
+.app-header {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.logo-mark {
+  flex: 0 0 auto;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #06121f;
+  background: var(--c9-blue);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  max-width: 640px;
+  color: var(--muted);
+}
+
+.badge {
+  margin-left: auto;
+  padding: 6px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--c9-sky);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+@media (max-width: 900px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat {
+  padding: 16px;
+  background: var(--navy-800);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--c9-sky);
+}
+
+.stat-label {
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.stat-sub {
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.tendency-panel h2 {
+  margin: 8px 0 4px;
+  font-size: 24px;
+}
+
+.panel-note,
+.panel-sub {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .panel-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel-card {
+  margin-top: 12px;
+  padding: 16px;
+  background: var(--navy-900);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.panel-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.champ-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.champ-table th,
+.champ-table td {
+  padding: 6px 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.champ-table th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.champ-name {
+  font-weight: 600;
+}
+
+.wr-high {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.wr-low {
+  color: var(--red-team);
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px;
+}
+
+.player-card {
+  padding: 12px;
+  background: var(--navy-800);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.player-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.player-head span {
+  color: var(--muted);
+  text-align: right;
+}
+
+.player-pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.pool-chip {
+  padding: 3px 8px;
+  background: var(--navy-700);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.app-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 13px;
+}
+
+.app-footer code {
+  color: var(--muted);
+}
