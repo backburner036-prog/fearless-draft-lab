@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fearless Draft Lab — UI Mockup (Week 1 Design)</title>
+<style>
+  :root{
+    --c9-blue:#0090D4; --c9-sky:#4FC3F7; --navy-950:#060B14; --navy-900:#0A1424;
+    --navy-800:#0E1B30; --navy-700:#16263F; --line:#1E3355; --line-strong:#2C4A73;
+    --text:#EAF2FB; --muted:#8FA6C2; --faint:#5B7391;
+    --blue-team:#2E9BFF; --red-team:#FF4D5E; --gold:#FFC857; --green:#34D399; --danger:#FF4D5E;
+    --role-top:#7C5CFF; --role-jng:#22B07D; --role-mid:#E8A33D; --role-adc:#E5484D; --role-sup:#3E9BFF;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{background:var(--navy-950); color:var(--text); font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif; font-size:14px; line-height:1.5}
+  h1,h2,h3,.display{font-family:"Chakra Petch","Segoe UI",system-ui,sans-serif; text-transform:uppercase; letter-spacing:.05em}
+  .mono{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace}
+  button{font-family:inherit; cursor:pointer}
+  .wrap{max-width:1440px; margin:0 auto; padding:0 24px 32px}
+
+  /* ---------- header ---------- */
+  header{height:56px; display:flex; align-items:center; gap:18px; border-bottom:1px solid var(--line); margin-bottom:16px}
+  .logo{display:flex; align-items:center; gap:10px; font-family:"Chakra Petch",sans-serif; font-weight:700; font-size:19px; letter-spacing:.06em}
+  .logo .mark{width:32px; height:32px; background:var(--c9-blue); color:#06121F; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:17px; clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+  .logo small{font-size:10px; color:var(--muted); letter-spacing:.14em; display:block; font-weight:600}
+  .hdr-info{color:var(--muted); font-size:13px}
+  .hdr-info b{color:var(--text)}
+  .hdr-right{margin-left:auto; display:flex; align-items:center; gap:14px}
+  .game-tabs{display:flex; gap:6px}
+  .game-tab{padding:6px 12px; border:1px solid var(--line); border-radius:999px; background:var(--navy-800); color:var(--muted); font-size:12px; font-weight:600}
+  .game-tab.active{background:var(--c9-blue); border-color:var(--c9-blue); color:#06121F}
+  .game-tab.done{border-color:var(--green); color:var(--green)}
+  .pill{padding:5px 10px; border-radius:999px; border:1px solid var(--line-strong); font-size:11px; font-weight:700; letter-spacing:.08em}
+  .pill.fearless-on{border-color:var(--gold); color:var(--gold)}
+  .pill.fearless-off{color:var(--faint)}
+  .timer{font-family:"JetBrains Mono",monospace; font-size:18px; font-weight:700; color:var(--c9-sky)}
+
+  /* ---------- phase bar ---------- */
+  .phasebar{display:flex; align-items:center; gap:16px; background:var(--navy-900); border:1px solid var(--line); border-radius:10px; padding:10px 16px; margin-bottom:16px}
+  .steps{display:flex; gap:0; flex:1}
+  .step{flex:1; text-align:center; font-size:11px; font-weight:700; letter-spacing:.08em; color:var(--faint); padding:6px 4px; border-bottom:3px solid var(--line); text-transform:uppercase}
+  .step.done{color:var(--green); border-bottom-color:var(--green)}
+  .step.active{color:var(--c9-sky); border-bottom-color:var(--c9-sky)}
+  .turn{font-weight:700; font-size:13px; white-space:nowrap}
+  .turn.blue{color:var(--blue-team)} .turn.red{color:var(--red-team)}
+  .btn{padding:8px 16px; border-radius:8px; border:1px solid var(--line-strong); background:var(--navy-800); color:var(--text); font-weight:600; font-size:13px}
+  .btn:hover{filter:brightness(1.15)}
+  .btn:disabled{opacity:.4; cursor:not-allowed}
+  .btn.primary{background:var(--c9-blue); border-color:var(--c9-blue); color:#06121F; font-weight:700}
+  .btn.danger{color:var(--red-team); border-color:rgba(255,77,94,.5)}
+  .btn.ghost{background:transparent}
+
+  /* ---------- main grid ---------- */
+  .grid{display:grid; grid-template-columns:250px 1fr 300px; gap:16px; align-items:start}
+  .panel{background:var(--navy-900); border:1px solid var(--line); border-radius:10px; padding:14px}
+  .panel h3{font-size:13px; margin-bottom:10px; display:flex; justify-content:space-between; align-items:center}
+  .panel h3 span{color:var(--muted); font-size:11px; letter-spacing:.06em}
+  .side-blue h3{color:var(--blue-team)} .side-red h3{color:var(--red-team)}
+
+  /* ban row + pick slots */
+  .bans{display:flex; gap:6px; margin-bottom:12px}
+  .ban-slot{width:40px; height:40px; border:1px dashed var(--line-strong); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:10px; color:var(--faint); font-weight:700; position:relative; overflow:hidden}
+  .ban-slot.filled{border:1px solid var(--red-team); border-style:solid; background:var(--navy-800)}
+  .ban-slot.filled .mono2{font-size:13px; font-weight:700; color:var(--text)}
+  .ban-slot.filled::after{content:"✕"; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:var(--red-team); font-size:20px; font-weight:700; background:rgba(6,11,20,.55)}
+  .pick-slot{display:flex; align-items:center; gap:10px; border:1px dashed var(--line-strong); border-radius:10px; padding:8px 10px; margin-bottom:8px; min-height:60px; background:var(--navy-800)}
+  .pick-slot.filled{border-style:solid}
+  .pick-slot.filled.blue{border-color:var(--blue-team)}
+  .pick-slot.filled.red{border-color:var(--red-team)}
+  .pick-slot.active{border-color:var(--c9-sky); animation:pulse 1.2s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(79,195,247,.0)}50%{box-shadow:0 0 0 3px rgba(79,195,247,.35)}}
+  .slot-face{width:44px; height:44px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:15px; color:#fff; flex-shrink:0}
+  .slot-empty{width:44px; height:44px; border-radius:8px; border:1px dashed var(--line-strong); display:flex; align-items:center; justify-content:center; color:var(--faint); font-size:11px; font-weight:700; flex-shrink:0}
+  .slot-meta b{display:block; font-size:13px}
+  .slot-meta span{font-size:11px; color:var(--muted)}
+  .role-top{background:var(--role-top)} .role-jng{background:var(--role-jng)} .role-mid{background:var(--role-mid)} .role-adc{background:var(--role-adc)} .role-sup{background:var(--role-sup)}
+
+  /* champion grid */
+  .toolbar{display:flex; gap:10px; margin-bottom:12px; flex-wrap:wrap}
+  .toolbar input{background:var(--navy-800); border:1px solid var(--line); border-radius:8px; color:var(--text); padding:8px 12px; font-size:13px; flex:1; min-width:160px}
+  .toolbar input::placeholder{color:var(--faint)}
+  .role-filters{display:flex; gap:6px}
+  .role-btn{padding:7px 12px; border-radius:999px; border:1px solid var(--line); background:var(--navy-800); color:var(--muted); font-size:12px; font-weight:600}
+  .role-btn.active{background:var(--c9-blue); border-color:var(--c9-blue); color:#06121F}
+  .champ-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(104px,1fr)); gap:10px}
+  .champ{border:1px solid var(--line); border-radius:10px; background:var(--navy-800); padding:10px 8px 8px; text-align:center; cursor:pointer; transition:transform .12s, border-color .12s; position:relative}
+  .champ:hover{border-color:var(--c9-sky); background:var(--navy-700); transform:translateY(-2px)}
+  .champ .face{width:52px; height:52px; margin:0 auto 6px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:18px; color:#fff}
+  .champ b{display:block; font-size:12px}
+  .champ span{font-size:10px; color:var(--muted); display:block}
+  .champ .pr{font-size:11px; color:var(--c9-sky); font-family:"JetBrains Mono",monospace}
+  .champ.selected{outline:2px solid var(--c9-blue); box-shadow:0 0 0 3px rgba(0,144,212,.35)}
+  .champ.picked-blue{border-color:var(--blue-team); opacity:.55; cursor:not-allowed}
+  .champ.picked-red{border-color:var(--red-team); opacity:.55; cursor:not-allowed}
+  .champ.banned{opacity:.45; cursor:not-allowed; filter:grayscale(1)}
+  .champ.banned::after{content:"✕ BANNED"; position:absolute; top:6px; right:6px; font-size:9px; font-weight:700; color:var(--red-team)}
+  .champ.locked{opacity:.4; cursor:not-allowed; filter:grayscale(1)}
+  .champ.locked::after{content:"🔒 LOCKED"; position:absolute; top:6px; right:6px; font-size:9px; font-weight:700; color:var(--gold)}
+  .champ.hidden{display:none}
+  .grid-foot{margin-top:12px; font-size:12px; color:var(--muted); display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap}
+  .legend{font-size:11px; color:var(--faint)}
+  .legend i{display:inline-block; width:10px; height:10px; border-radius:3px; margin:0 2px 0 8px; vertical-align:-1px}
+
+  /* sidebar */
+  .sidebar{display:flex; flex-direction:column; gap:16px}
+  .wr-big{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px}
+  .wr-big .pct{font-family:"JetBrains Mono",monospace; font-size:24px; font-weight:700}
+  .wr-big .pct.blue{color:var(--blue-team)} .wr-big .pct.red{color:var(--red-team)}
+  .wr-bar{height:14px; border-radius:999px; overflow:hidden; display:flex; background:var(--navy-800); border:1px solid var(--line)}
+  .wr-bar .fill-blue{background:var(--blue-team); transition:width .4s ease-out}
+  .wr-bar .fill-red{background:var(--red-team); transition:width .4s ease-out}
+  .wr-delta{text-align:center; font-size:12px; margin-top:6px; color:var(--muted)}
+  .wr-delta b{font-family:"JetBrains Mono",monospace}
+  .wr-log{margin-top:10px; font-size:12px; color:var(--muted); border-top:1px solid var(--line); padding-top:8px}
+  .wr-log div{padding:2px 0}
+  .tend-row{display:flex; align-items:center; gap:8px; padding:5px 0; border-bottom:1px solid rgba(30,51,85,.6); font-size:12px}
+  .tend-row:last-child{border-bottom:none}
+  .tend-row .mini{width:26px; height:26px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; color:#fff; flex-shrink:0}
+  .tend-row .nm{width:74px; font-weight:600}
+  .tend-row .bar{flex:1; height:7px; background:var(--navy-800); border-radius:99px; overflow:hidden}
+  .tend-row .bar i{display:block; height:100%; background:var(--c9-blue)}
+  .tend-row .bar i.red{background:var(--red-team)}
+  .tend-row .v{font-family:"JetBrains Mono",monospace; font-size:11px; width:36px; text-align:right; color:var(--muted)}
+  .tend-row.dead{opacity:.45} .tend-row.dead .nm{text-decoration:line-through}
+  .sample{font-size:11px; color:var(--faint); margin-top:8px}
+  .insight{background:rgba(255,200,87,.08); border-left:3px solid var(--gold); border-radius:8px; padding:10px 12px; font-size:13px; margin-top:10px}
+  .insight b{color:var(--gold)}
+  .pool-count{font-family:"JetBrains Mono",monospace; font-size:20px; font-weight:700; color:var(--gold)}
+  .pool-bar{height:8px; background:var(--navy-800); border-radius:99px; overflow:hidden; margin:6px 0 10px}
+  .pool-bar i{display:block; height:100%; background:var(--gold); transition:width .4s}
+  .lock-chips{display:flex; flex-wrap:wrap; gap:6px}
+  .lock-chip{font-size:11px; padding:4px 8px; border-radius:999px; border:1px solid rgba(255,200,87,.5); color:var(--gold); background:rgba(255,200,87,.07)}
+  .note{font-size:11px; color:var(--faint)}
+
+  /* overlays (setup / end state) */
+  .overlay{position:fixed; inset:0; background:rgba(4,8,15,.82); display:flex; align-items:center; justify-content:center; z-index:50; padding:20px}
+  .overlay.hidden{display:none}
+  .card{background:var(--navy-900); border:1px solid var(--line-strong); border-radius:14px; padding:28px; max-width:640px; width:100%; box-shadow:0 8px 24px rgba(0,0,0,.45); max-height:90vh; overflow:auto}
+  .card h2{font-size:22px; margin-bottom:4px}
+  .card .sub{color:var(--muted); margin-bottom:20px; font-size:13px}
+  .field{margin-bottom:16px}
+  .field label{display:block; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px}
+  .seg{display:flex; gap:8px; flex-wrap:wrap}
+  .seg button{flex:1; padding:10px; border-radius:8px; border:1px solid var(--line-strong); background:var(--navy-800); color:var(--text); font-weight:600; min-width:90px}
+  .seg button.active{background:var(--c9-blue); border-color:var(--c9-blue); color:#06121F}
+  .seg button.blue-opt.active{background:var(--blue-team); border-color:var(--blue-team)}
+  .seg button.red-opt.active{background:var(--red-team); border-color:var(--red-team); color:#fff}
+  .toggle-row{display:flex; align-items:center; gap:10px; font-size:13px}
+  .toggle-row input{width:18px; height:18px; accent-color:var(--gold)}
+  .card .actions{display:flex; gap:10px; margin-top:22px; flex-wrap:wrap}
+  .summary-teams{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0}
+  .summary-teams ul{list-style:none; font-size:13px}
+  .summary-teams li{padding:5px 0; border-bottom:1px solid rgba(30,51,85,.6); display:flex; justify-content:space-between}
+  .summary-teams li span{color:var(--muted); font-size:11px}
+  .final-wr{text-align:center; margin:10px 0 4px}
+  .final-wr .pct{font-size:34px; font-family:"JetBrains Mono",monospace; font-weight:700}
+  .foot-note{margin-top:24px; font-size:11px; color:var(--faint); text-align:center}
+  @media (max-width:1100px){ .grid{grid-template-columns:1fr 1fr} .center-col{grid-column:1/-1; order:3} .sidebar{grid-column:1/-1} }
+  @media (max-width:760px){ .grid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="logo"><div class="mark">F</div><div>FEARLESS<br>DRAFT LAB<small>SKY'S THE LIMIT · CATEGORY 2</small></div></div>
+    <div class="hdr-info">Series: <b id="hdr-series">BO3</b> · Opponent: <b id="hdr-opp">Cloud9 Kia</b> · You play: <b id="hdr-side">BLUE</b></div>
+    <div class="hdr-right">
+      <div class="game-tabs" id="game-tabs"></div>
+      <span class="pill fearless-on" id="fearless-pill">⚑ FEARLESS ON</span>
+      <span class="timer mono" id="timer">0:30</span>
+    </div>
+  </header>
+
+  <!-- ================= PHASE BAR ================= -->
+  <div class="phasebar">
+    <div class="steps" id="steps">
+      <div class="step" data-phase="0">Ban Phase 1</div>
+      <div class="step" data-phase="1">Pick Phase 1</div>
+      <div class="step" data-phase="2">Ban Phase 2</div>
+      <div class="step" data-phase="3">Pick Phase 2</div>
+    </div>
+    <div class="turn blue" id="turn-label">BLUE to ban</div>
+    <button class="btn ghost" id="undo-btn" disabled>↩ Undo</button>
+    <button class="btn" id="sim-btn">Simulate enemy ▶</button>
+  </div>
+
+  <!-- ================= MAIN GRID ================= -->
+  <div class="grid">
+    <!-- LEFT: draft board -->
+    <div class="panel side-blue" id="board-blue">
+      <h3>🔵 Blue Side <span id="blue-team-name">FEARLESS LAB</span></h3>
+      <div class="bans" id="blue-bans"></div>
+      <div id="blue-picks"></div>
+    </div>
+
+    <!-- CENTER: champion grid -->
+    <div class="panel center-col">
+      <h3>Champion Pool <span id="pool-label">26 shown · 168 in pool</span></h3>
+      <div class="toolbar">
+        <input id="search" type="text" placeholder="Search champion…" autocomplete="off">
+        <div class="role-filters" id="role-filters">
+          <button class="role-btn active" data-role="ALL">All</button>
+          <button class="role-btn" data-role="TOP">Top</button>
+          <button class="role-btn" data-role="JNG">Jungle</button>
+          <button class="role-btn" data-role="MID">Mid</button>
+          <button class="role-btn" data-role="ADC">ADC</button>
+          <button class="role-btn" data-role="SUP">Support</button>
+        </div>
+      </div>
+      <div class="champ-grid" id="champ-grid"></div>
+      <div class="grid-foot">
+        <span class="legend">Roles:
+          <i style="background:var(--role-top)"></i>Top <i style="background:var(--role-jng)"></i>Jungle
+          <i style="background:var(--role-mid)"></i>Mid <i style="background:var(--role-adc)"></i>ADC
+          <i style="background:var(--role-sup)"></i>Support</span>
+        <span id="select-hint">Click a champion, then confirm.</span>
+        <button class="btn primary" id="confirm-btn" disabled>Confirm</button>
+      </div>
+    </div>
+
+    <!-- RIGHT: sidebar -->
+    <div class="sidebar">
+      <div class="panel">
+        <h3>Live Win Rate <span>MODEL v0 · MOCK</span></h3>
+        <div class="wr-big">
+          <span class="pct blue" id="wr-blue">50.0%</span>
+          <span style="color:var(--muted); font-size:11px">BLUE vs RED</span>
+          <span class="pct red" id="wr-red">50.0%</span>
+        </div>
+        <div class="wr-bar"><div class="fill-blue" id="wr-fill-blue" style="width:50%"></div><div class="fill-red" id="wr-fill-red" style="width:50%"></div></div>
+        <div class="wr-delta" id="wr-delta">No picks yet — even game.</div>
+        <div class="wr-log" id="wr-log"></div>
+      </div>
+
+      <div class="panel">
+        <h3>Opponent Tendencies <span id="tend-opp">CLOUD9 KIA</span></h3>
+        <div style="font-size:11px; color:var(--muted); margin-bottom:6px">TOP PICKS — ALL GAMES</div>
+        <div id="tend-top"></div>
+        <div style="font-size:11px; color:var(--muted); margin:12px 0 6px">FIRST PICK</div>
+        <div id="tend-first"></div>
+        <div class="sample" id="tend-sample">n = 142 games · LCK 2025–26 · patch 26.x · mock data for UI review</div>
+        <div class="insight" id="insight-box"><b>HOW TO WIN —</b> <span id="insight-text">Ban Sejuani: opponent first-picks her in 70% of Game 1s.</span></div>
+      </div>
+
+      <div class="panel">
+        <h3>Fearless Tracker <span>POOL SHRINKS EACH GAME</span></h3>
+        <div>Champions remaining in pool</div>
+        <div class="pool-count"><span id="pool-left">168</span> / 168</div>
+        <div class="pool-bar"><i id="pool-bar" style="width:100%"></i></div>
+        <div style="font-size:11px; color:var(--muted); margin-bottom:6px">LOCKED FROM EARLIER GAMES</div>
+        <div class="lock-chips" id="lock-chips"><span class="note">Nothing locked yet — finish Game 1 to lock its 10 picks.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- red board is placed under the grid on wide screens via second row -->
+  <div class="grid" style="margin-top:16px; grid-template-columns:250px 1fr 300px">
+    <div class="panel side-red" id="board-red">
+      <h3>🔴 Red Side <span id="red-team-name">CLOUD9 KIA</span></h3>
+      <div class="bans" id="red-bans"></div>
+      <div id="red-picks"></div>
+    </div>
+    <div class="panel">
+      <h3>Draft Log <span>LATEST FIRST</span></h3>
+      <div id="draft-log" style="font-size:12px; color:var(--muted)">Draft not started yet.</div>
+    </div>
+    <div class="panel">
+      <h3>How to read this mockup <span>DESIGN · WEEK 1</span></h3>
+      <div style="font-size:12px; color:var(--muted); line-height:1.7">
+        1. Start at the <b style="color:var(--text)">Setup</b> screen (empty state).<br>
+        2. Draft: click a champion → <b style="color:var(--text)">Confirm</b>. Enemy turns auto-simulate.<br>
+        3. Watch the win-rate bar move and the tendency panel react.<br>
+        4. Finish the draft → end-state summary → <b style="color:var(--text)">Next Game</b> locks all 10 picks (Fearless) and the pool shrinks.<br>
+        5. All champion tiles are original CSS monograms — no Riot artwork.
+      </div>
+    </div>
+  </div>
+
+  <div class="foot-note">Fearless Draft Lab — design mockup v1 (Week 1, 27 Nov–3 Dec 2026) · Gusdur · Spec: <a href="./wireframe.md" style="color:var(--c9-sky)">docs/design/wireframe.md</a> · Data shown is mock data for UI review, not GRID data.</div>
+</div>
+
+<!-- ================= SETUP (EMPTY STATE) ================= -->
+<div class="overlay" id="setup-overlay">
+  <div class="card">
+    <h2>Set up the draft</h2>
+    <div class="sub">Empty state — no draft in progress yet. Pick your setup, then start Game 1.</div>
+    <div class="field">
+      <label>Your side</label>
+      <div class="seg" id="setup-side">
+        <button class="blue-opt active" data-v="BLUE">🔵 Blue Side</button>
+        <button class="red-opt" data-v="RED">🔴 Red Side</button>
+      </div>
+    </div>
+    <div class="field">
+      <label>Opponent</label>
+      <div class="seg" id="setup-opp">
+        <button class="active" data-v="Cloud9 Kia">Cloud9 Kia</button>
+        <button data-v="T1">T1</button>
+        <button data-v="Gen.G">Gen.G</button>
+        <button data-v="Hanwha Life">Hanwha Life</button>
+      </div>
+    </div>
+    <div class="field">
+      <label>Series format</label>
+      <div class="seg" id="setup-format">
+        <button class="active" data-v="BO3">Best of 3</button>
+        <button data-v="BO5">Best of 5</button>
+      </div>
+    </div>
+    <div class="field">
+      <label>Fearless Draft mode</label>
+      <label class="toggle-row"><input type="checkbox" id="setup-fearless" checked> <span><b style="color:var(--gold)">ON</b> — champions picked in earlier games are locked out of later games. Pool shrinks every game.</span></label>
+    </div>
+    <div class="actions">
+      <button class="btn primary" id="start-btn" style="flex:1; padding:12px">▶ Start Game 1 Draft</button>
+    </div>
+    <div class="note" style="margin-top:12px">Setup only — no account, no data leaves this page. Mock data for UI review.</div>
+  </div>
+</div>
+
+<!-- ================= END STATE ================= -->
+<div class="overlay hidden" id="end-overlay">
+  <div class="card">
+    <h2 id="end-title">Draft complete — Game 1</h2>
+    <div class="sub" id="end-sub">Both teams locked in. Review the matchup, then move to the next game.</div>
+    <div class="final-wr"><span style="color:var(--blue-team)">BLUE</span> <span class="pct" id="end-wr-blue">50.0%</span> <span style="color:var(--muted)">—</span> <span class="pct" id="end-wr-red" style="color:var(--red-team)">50.0%</span> <span style="color:var(--red-team)">RED</span></div>
+    <div class="summary-teams">
+      <div><h3 style="color:var(--blue-team); font-size:13px; margin-bottom:6px">🔵 BLUE — <span id="end-blue-name">FEARLESS LAB</span></h3><ul id="end-blue-list"></ul></div>
+      <div><h3 style="color:var(--red-team); font-size:13px; margin-bottom:6px">🔴 RED — <span id="end-red-name">CLOUD9 KIA</span></h3><ul id="end-red-list"></ul></div>
+    </div>
+    <div class="insight" id="end-insight"><b>HOW TO WIN —</b> <span id="end-insight-text"></span></div>
+    <div class="actions">
+      <button class="btn primary" id="next-game-btn" style="flex:1">Next Game ▶</button>
+      <button class="btn" id="export-btn">⧉ Export draft (copy)</button>
+      <button class="btn danger" id="new-draft-btn">New Draft</button>
+    </div>
+    <div class="note" id="export-note" style="margin-top:10px"></div>
+  </div>
+</div>
+
+<script>
+// ---------- mock data (UI review only — NOT GRID data) ----------
+const CHAMPS = [
+  {n:"Azir",r:"MID",p:8.2,pr:64},{n:"Sejuani",r:"JNG",p:7.8,pr:70},{n:"Vi",r:"JNG",p:7.4,pr:58},
+  {n:"Orianna",r:"MID",p:7.9,pr:61},{n:"Jinx",r:"ADC",p:8.0,pr:66},{n:"Thresh",r:"SUP",p:7.2,pr:52},
+  {n:"Renekton",r:"TOP",p:7.6,pr:55},{n:"Maokai",r:"JNG",p:7.1,pr:47},{n:"Ahri",r:"MID",p:7.7,pr:57},
+  {n:"Caitlyn",r:"ADC",p:7.8,pr:60},{n:"Rakan",r:"SUP",p:7.3,pr:49},{n:"Gnar",r:"TOP",p:7.5,pr:53},
+  {n:"Kindred",r:"JNG",p:7.6,pr:50},{n:"Syndra",r:"MID",p:7.9,pr:59},{n:"Aphelios",r:"ADC",p:8.1,pr:62},
+  {n:"Nautilus",r:"SUP",p:7.0,pr:55},{n:"Camille",r:"TOP",p:8.0,pr:63},{n:"Lee Sin",r:"JNG",p:7.9,pr:65},
+  {n:"Viktor",r:"MID",p:8.3,pr:58},{n:"Kalista",r:"ADC",p:7.5,pr:51},{n:"Leona",r:"SUP",p:7.4,pr:57},
+  {n:"Jayce",r:"TOP",p:7.7,pr:54},{n:"Nidalee",r:"JNG",p:7.3,pr:44},{n:"Zeri",r:"ADC",p:7.6,pr:48},
+  {n:"Renata",r:"SUP",p:7.1,pr:42},{n:"Rumble",r:"TOP",p:7.8,pr:46}
+];
+const ROLES = ["TOP","JNG","MID","ADC","SUP"];
+const ROLE_LABEL = {TOP:"Top",JNG:"Jungle",MID:"Mid",ADC:"ADC",SUP:"Support"};
+const ROLE_CLASS = {TOP:"role-top",JNG:"role-jng",MID:"role-mid",ADC:"role-adc",SUP:"role-sup"};
+const TEND_TOP = [["Sejuani",70],["Lee Sin",65],["Azir",64],["Camille",63],["Aphelios",62]];
+const TEND_FIRST = [["Sejuani",70],["Azir",22],["Camille",8]];
+// draft order: 6 bans, 6 picks, 4 bans, 4 picks
+const ORDER = [
+  {s:"BLUE",a:"ban"},{s:"RED",a:"ban"},{s:"BLUE",a:"ban"},{s:"RED",a:"ban"},{s:"BLUE",a:"ban"},{s:"RED",a:"ban"},
+  {s:"BLUE",a:"pick"},{s:"RED",a:"pick"},{s:"RED",a:"pick"},{s:"BLUE",a:"pick"},{s:"BLUE",a:"pick"},{s:"RED",a:"pick"},
+  {s:"RED",a:"ban"},{s:"BLUE",a:"ban"},{s:"RED",a:"ban"},{s:"BLUE",a:"ban"},
+  {s:"RED",a:"pick"},{s:"BLUE",a:"pick"},{s:"BLUE",a:"pick"},{s:"RED",a:"pick"}
+];
+const TOTAL_POOL = 168;
+
+const state = {
+  started:false, userSide:"BLUE", opp:"Cloud9 Kia", format:"BO3", fearless:true,
+  game:1, gamesTotal:3, step:0, selected:null, filter:"ALL", query:"",
+  blueBans:[], redBans:[], bluePicks:[], redPicks:[],
+  locked:{}, // game -> [names]
+  history:[], wrLog:[], wins:{BLUE:0,RED:0}, timer:30, timerId:null
+};
+const $ = id => document.getElementById(id);
+const champ = n => CHAMPS.find(c=>c.n===n);
+const initials = n => n.slice(0,2).toUpperCase();
+const isLocked = n => state.fearless && Object.values(state.locked).flat().includes(n);
+const isTaken = n => [...state.bluePicks,...state.redPicks,...state.blueBans,...state.redBans].includes(n);
+const isBanned = n => [...state.blueBans,...state.redBans].includes(n);
+const curTurn = () => ORDER[state.step];
+function winRate(){
+  const bp = state.bluePicks.reduce((s,n)=>s+champ(n).p,0);
+  const rp = state.redPicks.reduce((s,n)=>s+champ(n).p,0);
+  const banBonus = (state.blueBans.length - state.redBans.length) * 0.4;
+  let w = 50 + (bp - rp) * 1.2 + banBonus;
+  return Math.max(5, Math.min(95, w));
+}
+
+// ---------- rendering ----------
+function renderTabs(){
+  const t = $("game-tabs"); t.innerHTML = "";
+  for(let g=1; g<=state.gamesTotal; g++){
+    const b = document.createElement("button");
+    b.className = "game-tab" + (g===state.game ? " active" : "") + (g<state.game ? " done" : "");
+    b.textContent = "Game " + g + (g<state.game ? " ✓" : "");
+    t.appendChild(b);
+  }
+}
+function renderBoard(){
+  const mkBans = (list, el) => { const d=$(el); d.innerHTML="";
+    for(let i=0;i<5;i++){ const s=document.createElement("div"); s.className="ban-slot"+(list[i]?" filled":"");
+      s.innerHTML = list[i] ? `<span class="mono2">${initials(list[i])}</span>` : "BAN";
+      if(list[i]) s.title = list[i]; d.appendChild(s); } };
+  mkBans(state.blueBans,"blue-bans"); mkBans(state.redBans,"red-bans");
+  const mkPicks = (list, el, side) => { const d=$(el); d.innerHTML="";
+    ROLES.forEach((role,i)=>{ const n=list[i];
+      const s=document.createElement("div");
+      const active = state.started && curTurn() && curTurn().a==="pick" && curTurn().s===side && list.length===i;
+      s.className="pick-slot"+(n?` filled ${side.toLowerCase()}`:"")+(active?" active":"");
+      s.innerHTML = n
+        ? `<div class="slot-face ${ROLE_CLASS[champ(n).r]}">${initials(n)}</div><div class="slot-meta"><b>${n}</b><span>${ROLE_LABEL[champ(n).r]} · power ${champ(n).p}</span></div>`
+        : `<div class="slot-empty">${role}</div><div class="slot-meta"><b style="color:var(--faint)">${ROLE_LABEL[role]}</b><span>empty slot</span></div>`;
+      d.appendChild(s); }); };
+  mkPicks(state.bluePicks,"blue-picks","BLUE");
+  mkPicks(state.redPicks,"red-picks","RED");
+}
+function renderGrid(){
+  const g=$("champ-grid"); g.innerHTML="";
+  const q=state.query.trim().toLowerCase();
+  let shown=0;
+  CHAMPS.forEach(c=>{
+    if(state.filter!=="ALL" && c.r!==state.filter) return;
+    if(q && !c.n.toLowerCase().includes(q)) return;
+    shown++;
+    const d=document.createElement("div");
+    let cls="champ";
+    if(state.selected===c.n) cls+=" selected";
+    if(state.bluePicks.includes(c.n)) cls+=" picked-blue";
+    else if(state.redPicks.includes(c.n)) cls+=" picked-red";
+    else if(isBanned(c.n)) cls+=" banned";
+    else if(isLocked(c.n)) cls+=" locked";
+    d.className=cls;
+    d.innerHTML=`<div class="face ${ROLE_CLASS[c.r]}">${initials(c.n)}</div><b>${c.n}</b><span>${ROLE_LABEL[c.r]}</span><span class="pr">${c.pr}% pick</span>`;
+    d.onclick=()=>{ if(isTaken(c.n)||isLocked(c.n)||!state.started||state.step>=ORDER.length) return;
+      if(curTurn().s!==state.userSide){ flashHint("Not your turn — wait for the enemy."); return; }
+      state.selected=c.n; renderGrid(); updateConfirm(); };
+    g.appendChild(d);
+  });
+  $("pool-label").textContent = shown + " shown · " + poolLeft() + " in pool";
+  if(shown===0) g.innerHTML = `<div style="grid-column:1/-1; color:var(--muted); padding:20px; text-align:center">No champions match that filter. Locked champions stay visible (greyed) — the coach must see the pool shrink.</div>`;
+}
+function poolLeft(){ return TOTAL_POOL - Object.values(state.locked).flat().length; }
+function renderWR(){
+  const w=winRate();
+  $("wr-blue").textContent=w.toFixed(1)+"%";
+  $("wr-red").textContent=(100-w).toFixed(1)+"%";
+  $("wr-fill-blue").style.width=w+"%";
+  $("wr-fill-red").style.width=(100-w)+"%";
+  const last=state.wrLog[0];
+  $("wr-delta").innerHTML = last ? `Last change: <b style="color:${last.d>=0?"var(--green)":"var(--red-team)"}">${last.d>=0?"▲ +":"▼ "}${last.d.toFixed(1)}%</b> — ${last.text}` : "No picks yet — even game.";
+  $("wr-log").innerHTML = state.wrLog.slice(0,3).map(l=>`<div>${l.d>=0?"▲":"▼"} ${l.text} <span class="mono">(${l.d>=0?"+":""}${l.d.toFixed(1)}%)</span></div>`).join("") || `<div>No changes yet.</div>`;
+}
+function renderTend(){
+  const row=(name,pct,red)=>{ const dead=isTaken(name);
+    return `<div class="tend-row${dead?" dead":""}"><div class="mini ${ROLE_CLASS[champ(name).r]}">${initials(name)}</div><div class="nm">${name}</div><div class="bar"><i class="${red?"red":""}" style="width:${pct}%"></i></div><div class="v">${pct}%</div></div>`; };
+  $("tend-top").innerHTML = TEND_TOP.map(([n,p])=>row(n,p)).join("");
+  $("tend-first").innerHTML = TEND_FIRST.map(([n,p])=>row(n,p,true)).join("");
+  $("tend-opp").textContent = state.opp.toUpperCase();
+  $("insight-text").textContent = insightText();
+}
+function insightText(){
+  const sjBanned = isBanned("Sejuani");
+  if(!sjBanned && state.game===1) return "Ban Sejuani: opponent first-picks her in 70% of Game 1s.";
+  if(sjBanned) return "Sejuani banned — opponent's Game 1 first-pick is gone. Their Fearless Game 2 win-rate drops ~15% without her.";
+  if(state.game>=2) return "Pool is shrinking (Fearless): target their narrow role pools — " + state.opp + " runs out of comfort picks by Game " + state.game + ".";
+  return "Watch their jungle pool: Sejuani + Lee Sin cover 65% of their first picks.";
+}
+function renderFearless(){
+  $("pool-left").textContent = poolLeft();
+  $("pool-bar").style.width = (poolLeft()/TOTAL_POOL*100)+"%";
+  const all=Object.entries(state.locked).flatMap(([g,names])=>names.map(n=>({g,n})));
+  $("lock-chips").innerHTML = all.length
+    ? all.map(({g,n})=>`<span class="lock-chip" title="Locked in Game ${g}">🔒 ${n} · G${g}</span>`).join("")
+    : `<span class="note">Nothing locked yet — finish Game 1 to lock its 10 picks.</span>`;
+  $("fearless-pill").textContent = state.fearless ? "⚑ FEARLESS ON" : "○ FEARLESS OFF";
+  $("fearless-pill").className = "pill " + (state.fearless ? "fearless-on" : "fearless-off");
+}
+function renderSteps(){
+  const phase = state.step>=ORDER.length ? 3 : (state.step<6?0: state.step<12?1: state.step<16?2:3);
+  document.querySelectorAll("#steps .step").forEach((el,i)=>{
+    el.className="step"+(i<phase?" done": i===phase&&state.started?" active":"");
+  });
+  const t=curTurn();
+  const tl=$("turn-label");
+  if(!state.started){ tl.textContent="Draft not started"; tl.className="turn"; }
+  else if(!t){ tl.textContent="Draft complete"; tl.className="turn"; }
+  else { tl.textContent = `${t.s} to ${t.a} — ${t.s===state.userSide?"YOUR TURN":"enemy"}`; tl.className="turn "+t.s.toLowerCase(); }
+  $("undo-btn").disabled = state.history.length===0;
+}
+function renderLog(){
+  const d=$("draft-log");
+  if(!state.history.length){ d.textContent="Draft not started yet."; return; }
+  d.innerHTML = state.history.slice().reverse().slice(0,12).map(h=>`<div>${h}</div>`).join("");
+}
+function renderAll(){ renderTabs(); renderBoard(); renderGrid(); renderWR(); renderTend(); renderFearless(); renderSteps(); renderLog(); updateConfirm(); }
+function flashHint(msg){ const h=$("select-hint"); h.textContent=msg; setTimeout(()=>{h.textContent="Click a champion, then confirm.";},2200); }
+function updateConfirm(){
+  const b=$("confirm-btn");
+  const ok = state.started && state.selected && curTurn() && curTurn().s===state.userSide;
+  b.disabled=!ok;
+  b.textContent = state.selected ? `Confirm ${curTurn()?curTurn().a:""} — ${state.selected}` : "Confirm";
+}
+
+// ---------- draft flow ----------
+function applyAction(name){
+  const t=curTurn(); if(!t) return;
+  const before=winRate();
+  if(t.a==="ban"){ (t.s==="BLUE"?state.blueBans:state.redBans).push(name); }
+  else { (t.s==="BLUE"?state.bluePicks:state.redPicks).push(name); }
+  state.history.push(`${t.s} ${t.a==='ban'?'bans':'picks'} ${name}`);
+  state.step++;
+  const after=winRate();
+  state.wrLog.unshift({text:`${t.s} ${t.a==='ban'?'banned':'picked'} ${name}`, d: after-before});
+  state.selected=null; resetTimer(); renderAll();
+  if(state.step>=ORDER.length){ setTimeout(showEnd, 600); return; }
+  if(curTurn().s!==state.userSide){ setTimeout(enemyMove, 900); }
+}
+function enemyMove(){
+  if(!state.started || state.step>=ORDER.length) return;
+  const t=curTurn(); if(t.s===state.userSide) return;
+  const avail=CHAMPS.filter(c=>!isTaken(c.n)&&!isLocked(c.n));
+  if(!avail.length) return;
+  // enemy prefers high pick-rate champs, slight randomness
+  avail.sort((a,b)=> (b.pr + Math.random()*15) - (a.pr + Math.random()*15));
+  const pick = t.a==="ban"
+    ? avail.sort((a,b)=>b.pr-a.pr)[0]
+    : avail[0];
+  applyAction(pick.n);
+}
+function undo(){
+  const last=state.history.pop(); if(!last) return;
+  state.step--;
+  const t=ORDER[state.step];
+  const name=last.split(" ").pop();
+  const arr = t.a==="ban" ? (t.s==="BLUE"?state.blueBans:state.redBans) : (t.s==="BLUE"?state.bluePicks:state.redPicks);
+  const i=arr.indexOf(name); if(i>=0) arr.splice(i,1);
+  state.wrLog.shift(); state.selected=null; renderAll();
+  if(curTurn() && curTurn().s!==state.userSide){ /* enemy turn re-appears; user can press Simulate */ }
+}
+function resetTimer(){ state.timer=30; $("timer").textContent="0:30"; }
+function startTimer(){
+  clearInterval(state.timerId);
+  state.timerId=setInterval(()=>{
+    if(!state.started || state.step>=ORDER.length){ clearInterval(state.timerId); return; }
+    state.timer--;
+    $("timer").textContent="0:"+String(Math.max(0,state.timer)).padStart(2,"0");
+    if(state.timer<=0){ // auto-pick highest pick-rate available (marked AUTO)
+      const t=curTurn();
+      if(t.s===state.userSide){
+        const avail=CHAMPS.filter(c=>!isTaken(c.n)&&!isLocked(c.n)).sort((a,b)=>b.pr-a.pr);
+        if(avail[0]){ applyAction(avail[0].n); }
+      }
+      resetTimer();
+    }
+  },1000);
+}
+
+// ---------- setup / end ----------
+function segWire(id, fn){ $(id).querySelectorAll("button").forEach(b=>b.onclick=()=>{ $(id).querySelectorAll("button").forEach(x=>x.classList.remove("active")); b.classList.add("active"); fn(b.dataset.v); }); }
+segWire("setup-side", v=>state.userSide=v);
+segWire("setup-opp", v=>state.opp=v);
+segWire("setup-format", v=>{ state.format=v; state.gamesTotal = v==="BO5"?5:3; });
+$("setup-fearless").onchange=e=>state.fearless=e.target.checked;
+
+$("start-btn").onclick=()=>{
+  state.started=true; state.game=1; state.step=0; state.selected=null;
+  state.blueBans=[]; state.redBans=[]; state.bluePicks=[]; state.redPicks=[];
+  state.locked={}; state.history=[]; state.wrLog=[]; state.wins={BLUE:0,RED:0};
+  $("hdr-series").textContent=state.format;
+  $("hdr-opp").textContent=state.opp;
+  $("hdr-side").textContent=state.userSide;
+  $("blue-team-name").textContent = state.userSide==="BLUE" ? "FEARLESS LAB (YOU)" : state.opp.toUpperCase();
+  $("red-team-name").textContent = state.userSide==="RED" ? "FEARLESS LAB (YOU)" : state.opp.toUpperCase();
+  $("end-blue-name").textContent=$("blue-team-name").textContent;
+  $("end-red-name").textContent=$("red-team-name").textContent;
+  $("setup-overlay").classList.add("hidden");
+  resetTimer(); startTimer(); renderAll();
+  if(curTurn().s!==state.userSide) setTimeout(enemyMove, 900);
+};
+function showEnd(){
+  const w=winRate();
+  $("end-title").textContent=`Draft complete — Game ${state.game}`;
+  $("end-wr-blue").textContent=w.toFixed(1)+"%";
+  $("end-wr-red").textContent=(100-w).toFixed(1)+"%";
+  const li=(list)=>list.map(n=>`<li>${n}<span>${ROLE_LABEL[champ(n).r]} · ${champ(n).p}</span></li>`).join("");
+  $("end-blue-list").innerHTML=li(state.bluePicks);
+  $("end-red-list").innerHTML=li(state.redPicks);
+  $("end-insight-text").textContent=insightText();
+  $("next-game-btn").textContent = state.game<state.gamesTotal ? `Next Game — lock ${state.bluePicks.length+state.redPicks.length} picks (Fearless) ▶` : `Finish Series ▶`;
+  $("end-overlay").classList.remove("hidden");
+}
+$("next-game-btn").onclick=()=>{
+  if(state.fearless){
+    state.locked[state.game]=[...state.bluePicks,...state.redPicks];
+  }
+  if(state.game>=state.gamesTotal){
+    $("end-title").textContent="Series complete — " + state.format;
+    $("end-sub").textContent=`All ${state.gamesTotal} games drafted. Fearless locked ${Object.values(state.locked).flat().length} champions across the series. Export the report below.`;
+    $("next-game-btn").disabled=true;
+    renderAll(); return;
+  }
+  state.game++; state.step=0; state.selected=null;
+  state.blueBans=[]; state.redBans=[]; state.bluePicks=[]; state.redPicks=[]; state.wrLog=[];
+  $("end-overlay").classList.add("hidden");
+  resetTimer(); startTimer(); renderAll();
+  if(curTurn().s!==state.userSide) setTimeout(enemyMove, 900);
+};
+$("new-draft-btn").onclick=()=>{ $("end-overlay").classList.add("hidden"); $("setup-overlay").classList.remove("hidden"); state.started=false; clearInterval(state.timerId); };
+$("export-btn").onclick=()=>{
+  const w=winRate();
+  const txt=`FEARLESS DRAFT LAB — ${state.format} vs ${state.opp} — Game ${state.game}\nBLUE (${w.toFixed(1)}%): ${state.bluePicks.join(", ")}\nRED (${(100-w).toFixed(1)}%): ${state.redPicks.join(", ")}\nBans B: ${state.blueBans.join(", ")} | Bans R: ${state.redBans.join(", ")}\nFearless locked: ${Object.values(state.locked).flat().join(", ")||"none"}\nInsight: ${insightText()}`;
+  navigator.clipboard?.writeText(txt).then(()=>{ $("export-note").textContent="✓ Copied to clipboard."; })
+    .catch(()=>{ $("export-note").textContent="Copy blocked by browser — select the text manually:\n"+txt; });
+};
+$("confirm-btn").onclick=()=>{ if(state.selected) applyAction(state.selected); };
+$("undo-btn").onclick=undo;
+$("sim-btn").onclick=()=>{ if(state.started && curTurn() && curTurn().s!==state.userSide) enemyMove(); else flashHint("Enemy is not on turn right now."); };
+$("search").oninput=e=>{ state.query=e.target.value; renderGrid(); };
+$("role-filters").querySelectorAll("button").forEach(b=>b.onclick=()=>{
+  $("role-filters").querySelectorAll("button").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active"); state.filter=b.dataset.role; renderGrid();
+});
+
+// ---------- init ----------
+renderAll();
+</script>
+</body>
+</html>
